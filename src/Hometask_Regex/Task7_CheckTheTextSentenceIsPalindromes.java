@@ -1,9 +1,11 @@
+package Hometask_Regex;
+
 import java.util.Scanner;
 
 public class Task7_CheckTheTextSentenceIsPalindromes {
 
     public static void main(String[] args){
-        String text = "Шалаша";
+        String text = "Шалаш";
         isPalindrome(text);
         System.out.println(isPalindrome(text));
 

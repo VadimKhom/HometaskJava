@@ -1,3 +1,5 @@
+package Hometask_Regex;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -31,7 +33,7 @@ public class Task2_FindInTheTextAllIpAddress {
             e.printStackTrace();
         }
 
-        //нахождение ip-адрессов и замена и "Засекречено"
+        //нахождение ip-адрессов и замена на "Засекречено"
         try(BufferedReader bufferedReader = new BufferedReader(new FileReader("D://IpAddress.txt"))) {
             Pattern pattern = Pattern.compile("(25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[0-9]{2}|[0-9])" +
                     "(\\.(25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[0-9]{2}|[0-9])){3}");
